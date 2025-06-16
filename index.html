@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azmi Energy Sarl</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior: smooth;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('img/background.jpg') center/cover no-repeat;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .card img {
+            object-fit: cover;
+            height: 220px;
+        }
+    </style>
+</head>
+
+<body>
+ <!-- Top Bar -->
+<div class="top-bar text-white text-center py-2" style="background: linear-gradient(to right, #222, #444); font-size: 0.95rem;">
+  <div class="container d-flex justify-content-center align-items-center flex-wrap gap-3">
+    <span><i class="fas fa-envelope me-1 text-warning"></i> azmienergy@gmail.com</span>
+    <span><i class="fas fa-phone me-1 text-success"></i> +255 779 883 380</span>
+    <a href="https://wa.me/+255 779 883 380" class="text-white" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp fa-lg mx-2 text-success"></i>
+    </a>
+    <a href="https://facebook.com/azmienergy" class="text-white" target="_blank" title="Facebook">
+      <i class="fab fa-facebook-f fa-lg mx-2 text-primary"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg py-3 sticky-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/Logo.png" alt="logo" width="65" height="65" class="me-2">
+      <strong class="fs-5">AZMI ENERGY Ltd</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+      <ul class="navbar-nav align-items-center gap-3 me-3">
+        <li class="nav-item"><a class="nav-link lang" href="#home" data-en="Home" data-so="Bogga Hore">Home</a></li>
+        <li class="nav-item"><a class="nav-link lang" href="#about" data-en="About" data-so="Nagu saabsan">About</a></li>
+        <li class="nav-item"><a class="nav-link lang" href="#services" data-en="Services" data-so="Adeegyada">Services</a></li>
+        <li class="nav-item"><a class="nav-link lang" href="#team" data-en="Team" data-so="Kooxda">Team</a></li>
+        <li class="nav-item"><a class="nav-link lang" href="#testimonial" data-en="Testimonials" data-so="Faallooyin">Testimonials</a></li> 
+        <li class="nav-item"><a class="nav-link lang" href="#contact" data-en="Contact" data-so="Nala Soo Xiriir">Contact</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <button class="btn btn-sm btn-outline-warning" onclick="toggleLanguage()">SO / EN</button>
+        <button class="btn btn-sm btn-outline-light" onclick="toggleTheme()">☀ / 🌙</button>
+        <a href="login.php" class="btn btn-sm btn-success">Login</a>
+        <a href="register.php" class="btn btn-sm btn-info">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Azmi Energy Sarl</h1>
+            <p class="lead lang" data-en="Fuel Transport & Logistics Services" data-so="Adeegyada Gaadiidka Shidaalka">
+                Fuel Transport & Logistics Services</p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title lang" data-en="About Us" data-so="Nagu saabsan">About Us</h2>
+            <p>Azmi Energy Sarl is a premier logistics and fuel transport provider based in Dar Es Salaam, Tanzania. We
+                ensure safe and reliable delivery to our clients across East Africa.</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title lang" data-en="Our Services" data-so="Adeegyadayada">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-truck fa-3x text-primary mb-3"></i>
+                    <h5>Fuel Transport</h5>
+                    <p>Reliable and safe transport of petroleum products.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-warehouse fa-3x text-primary mb-3"></i>
+                    <h5>Storage Solutions</h5>
+                    <p>Secure fuel storage facilities for bulk clients.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-map-marked-alt fa-3x text-primary mb-3"></i>
+                    <h5>Route Planning</h5>
+                    <p>Optimized logistics routing for on-time delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="section-title lang" data-en="Meet Our Team" data-so="Kooxdayada">Meet Our Team</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card bg-secondary text-white"><img src="img/Logo.png"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>Hamud Abdi</h5>
+                            <p>CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-secondary text-white"><img src="img/Logo.png"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>....</h5>
+                            <p>Operations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-secondary text-white"><img src="img/Logo.png"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>......</h5>
+                            <p>Logistics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-secondary text-white"><img src="img/Logo.png"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5>.......</h5>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonial" class="py-5 text-center">
+        <div class="container">
+            <h2 class="section-title lang" data-en="What Our Clients Say" data-so="Macmiisha Maxay Yiraahdeen">What Our
+                Clients Say</h2>
+            <blockquote class="blockquote">“Azmi Energy provided seamless fuel transport for our fleet across East
+                Africa. Highly recommended!”</blockquote>
+            <footer class="blockquote-footer">Client from Nairobi</footer>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center lang mb-4" data-en="Contact Us" data-so="Nala Soo Xiriir">Contact Us
+            </h2>
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <div class="p-4 bg-secondary rounded shadow h-100">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="col-md-6">
+                    <div class="rounded overflow-hidden shadow h-100">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126851.5373836488!2d39.178865636048234!3d-6.792354889979306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4c9aaacb4ab5%3A0xf0eb03c0300f36b6!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2stz!4v1718400000000"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+ <footer class="bg-dark text-center text-white py-4">
+    <div class="container">
+      <p class="mb-2">
+        <i class="fas fa-envelope"></i> azmienergy@gmail.com |
+        <i class="fas fa-phone"></i> +255 779 883 380 |
+        <a href="https://wa.me/+255 779 883 380" target="_blank" class="text-warning"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://facebook.com/azmienergy" target="_blank" class="text-primary ms-2"><i class="fab fa-facebook-f"></i></a>
+      </p>
+      <!-- <p class="mb-0">&copy; 2025 Azmi Energy Sarl. All rights reserved.</p> -->
+    </div>
+  </footer>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <p class="mb-0">&copy; 2025 Azmi Energy Sarl. All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let currentLang = "en";
+        function toggleLanguage() {
+            currentLang = currentLang === "en" ? "so" : "en";
+            document.querySelectorAll(".lang").forEach(el => {
+                const text = el.getAttribute("data-" + currentLang);
+                if (text) el.textContent = text;
+            });
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle("bg-dark");
+            document.body.classList.toggle("text-white");
+            document.querySelectorAll(".bg-light").forEach(el => {
+                el.classList.toggle("bg-dark");
+                el.classList.toggle("text-white");
+            });
+            document.querySelectorAll(".bg-secondary").forEach(el => {
+                el.classList.toggle("bg-dark");
+                el.classList.toggle("text-white");
+            });
+        }
+    </script>
+</body>
+
+</html>
